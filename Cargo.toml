@@ -1,11 +1,11 @@
 [package]
 name = "safeline-rs"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["frank"]
 description = "Rust SDK for SafeLine WAF API"
 license = "MIT"
-repository = "https://github.com/yourusername/safeline-sdk"
+repository = "https://github.com/Felix-Anderson/safeline-rs.git"
 keywords = ["safeline", "waf", "security", "api"]
 categories = ["api-bindings", "web-programming::http-client"]
 

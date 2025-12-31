@@ -24,10 +24,20 @@
 //! }
 //! ```
 
+pub mod acl;
+pub mod auth;
+pub mod cert;
 pub mod client;
 pub mod error;
 pub mod ipgroup;
+pub mod ja4;
 pub mod models;
+pub mod other;
+pub mod policy;
+pub mod record;
+pub mod site;
+pub mod stat;
+pub mod system;
 
 pub use client::Client;
 pub use error::{Error, Result};
