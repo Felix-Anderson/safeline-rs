@@ -213,27 +213,27 @@ cargo doc --open
 
 | 方法 | 端点 | 状态 | 测试 |
 |------|------|------|------|
-| list_websites | GET /open/site | ✅ 已实现 | ⏳ 待测试 |
-| create_website | POST /open/site | ✅ 已实现 | ⏳ 待测试 |
-| get_website_detail | GET /open/site/{id} | ✅ 已实现 | ⏳ 待测试 |
-| update_website | PUT /open/site/{id} | ✅ 已实现 | ⏳ 待测试 |
-| delete_websites | DELETE /open/site | ✅ 已实现 | ⏳ 待测试 |
-| put_website_basic_info | PUT /open/site/{id}/basic_info | ✅ 已实现 | ⏳ 待测试 |
-| put_website_defense | PUT /open/site/{id}/defense | ✅ 已实现 | ⏳ 待测试 |
-| put_website_mode | PUT /open/site/mode | ✅ 已实现 | ⏳ 待测试 |
-| put_website_chaos | PUT /open/site/{id}/chaos | ✅ 已实现 | ⏳ 待测试 |
-| put_website_challenge | PUT /open/site/{id}/challenge | ✅ 已实现 | ⏳ 待测试 |
-| set_website_waiting_room | PUT /open/site/{id}/waiting_room | ✅ 已实现 | ⏳ 待测试 |
-| list_website_groups | GET /open/site/group | ✅ 已实现 | ⏳ 待测试 |
-| create_website_group | POST /open/site/group | ✅ 已实现 | ⏳ 待测试 |
-| update_website_group | PUT /open/site/group/{id} | ✅ 已实现 | ⏳ 待测试 |
-| delete_website_group | DELETE /open/site/group/{id} | ✅ 已实现 | ⏳ 待测试 |
-| sort_website_groups | PUT /open/site/group/sort | ✅ 已实现 | ⏳ 待测试 |
-| sort_websites | PUT /open/site/sort | ✅ 已实现 | ⏳ 待测试 |
-| group_switch | PUT /open/site/group/switch | ✅ 已实现 | ⏳ 待测试 |
-| get_nginx_config | GET /open/site/{id}/nginx_config | ✅ 已实现 | ⏳ 待测试 |
-| update_nginx_config | PUT /open/site/{id}/nginx_config | ✅ 已实现 | ⏳ 待测试 |
-| website_health_check | PUT /open/site/{id}/health_check | ✅ 已实现 | ⏳ 待测试 |
+| list_websites | GET /open/site | ✅ 已实现 | ✅ 已测试 |
+| create_website | POST /open/site | ✅ 已实现 | ✅ 已测试 |
+| get_website_detail | GET /open/site/{id} | ✅ 已实现 | ✅ 已测试 |
+| update_website | PUT /open/site/{id} | ✅ 已实现 | ✅ 已测试 |
+| delete_websites | DELETE /open/site | ✅ 已实现 | ✅ 已测试 |
+| put_website_basic_info | PUT /open/site/{id}/basic_info | ✅ 已实现 | ✅ 已测试 |
+| put_website_defense | PUT /open/site/{id}/defense | ✅ 已实现 | ✅ 已测试 |
+| put_website_mode | PUT /open/site/mode | ✅ 已实现 | ✅ 已测试 |
+| put_website_chaos | PUT /open/site/{id}/chaos | ✅ 已实现 | ✅ 已测试 |
+| put_website_challenge | PUT /open/site/{id}/challenge | ✅ 已实现 | ✅ 已测试 |
+| set_website_waiting_room | PUT /open/site/{id}/waiting_room | ✅ 已实现 | ✅ 已测试 |
+| list_website_groups | GET /open/site/group | ✅ 已实现 | ✅ 已测试 |
+| create_website_group | POST /open/site/group | ✅ 已实现 | ✅ 已测试 |
+| update_website_group | PUT /open/site/group/{id} | ✅ 已实现 | ✅ 已测试 |
+| delete_website_group | DELETE /open/site/group/{id} | ✅ 已实现 | ✅ 已测试 |
+| sort_website_groups | PUT /open/site/group/{id}/sort | ✅ 已实现 | ✅ 已测试 |
+| sort_websites | PUT /open/site/sort | ✅ 已实现 | ✅ 已测试 |
+| group_switch | PUT /open/site/group/switch | ✅ 已实现 | ✅ 已测试 |
+| get_nginx_config | GET /open/site/{id}/nginx_config | ✅ 已实现 | ✅ 已测试 |
+| update_nginx_config | PUT /open/site/{id}/nginx_config | ✅ 已实现 | ✅ 已测试 |
+| website_health_check | PUT /open/site/{id}/health_check | ✅ 已实现 | ✅ 已测试 |
 
 ### 策略管理 (Policy)
 
@@ -312,8 +312,8 @@ cargo doc --open
 
 ### 测试覆盖情况
 
-- **已测试模块**: IPGroup, ACL (部分)
-- **待测试模块**: Site, Policy, Record (部分), Cert, JA4, Stat, Auth, System, Other
+- **已测试模块**: IPGroup, ACL (部分), Site
+- **待测试模块**: Policy, Record (部分), Cert, JA4, Stat, Auth, System, Other
 - **测试通过率**: 100% (已测试接口)
 
 ## 许可证

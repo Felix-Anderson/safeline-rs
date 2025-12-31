@@ -210,7 +210,7 @@ pub struct WebsiteRequest {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub id: Option<i32>,
     pub server_names: Vec<String>,
-    pub ports: Vec<i32>,
+    pub ports: Vec<String>,
     pub upstreams: Vec<String>,
     pub group_id: i32,
     pub comment: Option<String>,
@@ -238,7 +238,7 @@ pub struct HealthCheck {
 pub struct WebsiteItem {
     pub id: i32,
     pub server_names: Vec<String>,
-    pub ports: Vec<i32>,
+    pub ports: Vec<String>,
     pub upstreams: Vec<String>,
     pub group_id: i32,
     pub comment: Option<String>,
@@ -320,7 +320,7 @@ pub struct WebsiteDetailResponse {
 pub struct WebsiteDetailData {
     pub id: i32,
     pub server_names: Vec<String>,
-    pub ports: Vec<i32>,
+    pub ports: Vec<String>,
     pub upstreams: Vec<String>,
     pub group_id: i32,
     pub comment: Option<String>,
@@ -552,6 +552,24 @@ pub struct NginxConfigUpdateRequest {
 pub struct WebsiteHealthCheckRequest {
     pub hosts: Vec<String>,
     pub upstreams: Vec<String>,
+}
+
+/// Create website response
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct CreateWebsiteResponse {
+    pub data: i32,
+}
+
+/// Create website group response
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct CreateWebsiteGroupResponse {
+    pub data: i32,
+}
+
+/// Website group switch response
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct WebsiteGroupSwitchResponse {
+    pub data: bool,
 }
 
 // ============================================================================

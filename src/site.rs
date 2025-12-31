@@ -29,7 +29,7 @@ impl Client {
     /// # Returns
     ///
     /// Returns the created website ID
-    pub async fn create_website(&self, request: &WebsiteRequest) -> Result<CreateUserResponse> {
+    pub async fn create_website(&self, request: &WebsiteRequest) -> Result<CreateWebsiteResponse> {
         self.post("/open/site", request).await
     }
 
@@ -178,7 +178,7 @@ impl Client {
     /// # Returns
     ///
     /// Returns the created group ID
-    pub async fn create_website_group(&self, request: &CreateGroupRequest) -> Result<CreateUserResponse> {
+    pub async fn create_website_group(&self, request: &CreateGroupRequest) -> Result<CreateWebsiteGroupResponse> {
         self.post("/open/site/group", request).await
     }
 
@@ -224,7 +224,7 @@ impl Client {
     /// # Arguments
     ///
     /// * `request` - Switch request
-    pub async fn website_group_switch(&self, request: &GroupSwitchRequest) -> Result<()> {
+    pub async fn website_group_switch(&self, request: &GroupSwitchRequest) -> Result<WebsiteGroupSwitchResponse> {
         self.put("/open/site/group/switch", request).await
     }
 
