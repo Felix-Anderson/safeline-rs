@@ -6,7 +6,7 @@ authors = ["frank"]
 description = "Rust SDK for SafeLine WAF API"
 license = "MIT"
 repository = "https://github.com/Felix-Anderson/safeline-rs.git"
-keywords = ["safeline", "waf", "security", "雷池"，"ce"]
+keywords = ["safeline", "waf", "security", "ce"]
 categories = ["api-bindings", "web-programming::http-client"]
 
 [dependencies]
