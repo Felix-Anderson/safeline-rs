@@ -867,7 +867,8 @@ pub struct RecordEvent {
 /// Record event list response
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct RecordEventListResponse {
-    pub nodes: Vec<RecordEvent>,
+    #[serde(alias = "nodes")]
+    pub data: Vec<RecordEvent>,
     pub total: i32,
 }
 
